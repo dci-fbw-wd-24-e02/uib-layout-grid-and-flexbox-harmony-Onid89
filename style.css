@@ -18,3 +18,39 @@
 }
 
 /* Add your styles below here*/
+
+/* CSS GRID */
+
+body {
+  background: #383737;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5em;
+  color: #eee;
+  grid-auto-rows: minmax(10rem, auto);
+}
+
+/* CSS FLEX */
+
+.container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: #eee;
+  background-color: black;
+}
+
+/* change  background color of the text */
+.bg1 div,
+.bg2 div {
+  background-color: rgba(0, 0, 0, 0.637);
+}
+
+div:hover {
+  box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.85);
+}
